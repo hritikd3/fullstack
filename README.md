@@ -23,7 +23,7 @@ You may also see any lint errors in the console.
 
 ```bash
   git clone https://github.com/hritikd3/fullstack.git
-  cd iiitd-resume
+  cd project-name
 ```
 
 2. Install dependencies.
