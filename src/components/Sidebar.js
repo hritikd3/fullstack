@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
+import logoo from '../assets/logoo.jpg'
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
 import { FaTimes } from 'react-icons/fa'
@@ -9,15 +9,14 @@ import CartButtons from './CartButtons'
 import { useUserContext } from '../context/user_context'
 
 const Sidebar = () => {
-  const {isSidebarOpen,closeSidebar}= useProductsContext();
-  // console.log(data)
+  const { isSidebarOpen, closeSidebar } = useProductsContext();
   return (
     <SidebarContainer>
       <aside
         className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
       >
         <div className="sidebar-header">
-          <img src={logo} alt="hamburger logo" />
+          <img src={logoo} className="logo" alt="coding addict" />
           <button className="close-btn" onClick={closeSidebar}>
             <FaTimes />
           </button>
@@ -32,18 +31,19 @@ const Sidebar = () => {
               </li>
             );
           })}
-          <li>
-            <Link to="/checkout" onClick={closeSidebar}>
-              checkout
-            </Link>
-          </li>
+          
+            <li>
+              <Link to="/checkout" onClick={closeSidebar}>
+                checkout
+              </Link>
+            </li>
+          
         </ul>
         <CartButtons />
       </aside>
     </SidebarContainer>
   );
-}
-
+};
 const SidebarContainer = styled.div`
   text-align: center;
   .sidebar-header {
@@ -67,7 +67,7 @@ const SidebarContainer = styled.div`
   }
   .logo {
     justify-self: center;
-    height: 45px;
+    height: 85px;
   }
   .links {
     margin-bottom: 2rem;
