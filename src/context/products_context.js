@@ -15,7 +15,7 @@ import {
 
 const initialState = {
   //checking that our sidebar is open or not initial value is false
-  isSidebarOpen: false,
+  isSidebarOpen: true,
 }
 
 const ProductsContext = React.createContext()
