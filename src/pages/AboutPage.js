@@ -4,7 +4,27 @@ import { PageHero } from '../components'
 import aboutImg from '../assets/hero-bcg.jpeg'
 
 const AboutPage = () => {
-  return <h4>about page</h4>
+  return (
+    <main>
+      <PageHero title="about" />
+      <Wrapper className="page section section-center">
+        <img src={aboutImg} alt="about_img" />
+        <article>
+          <div className="title">
+            <h2>our story</h2>
+            <div className="underline"></div>
+          </div>
+          <p>
+            We at Mr.Chairwalla beleive in Self-indulgent and relaxing chaise lounge chairs
+            embody the mantra, treat yourself! You may picture old Hollywood
+            glamor or Victorian parlors when you think of chaise lounges. But
+            these luxurious long chairs can neatly fit into any decor scheme, be
+            it mid-mod or farmhouse chic.
+          </p>
+        </article>
+      </Wrapper>
+    </main>
+  );
 }
 
 const Wrapper = styled.section`
