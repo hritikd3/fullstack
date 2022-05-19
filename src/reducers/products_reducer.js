@@ -11,6 +11,14 @@ import {
 
 //action is what we want ot do and state is what current state is 
 const products_reducer = (state, action) => {
+  if(action.type=== SIDEBAR_OPEN){
+    console.log(action)
+    return {...state, isSidebarOpen: true}
+  }
+   if (action.type === SIDEBAR_CLOSE) {
+     console.log(action);
+     return { ...state, isSidebarOpen: false };
+   }
   return state
   throw new Error(`No Matching "${action.type}" - action type`)
 }
