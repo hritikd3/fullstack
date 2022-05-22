@@ -5,7 +5,15 @@ import heroBcg from '../assets/hero-bcg.jpeg'
 import heroBcg2 from '../assets/hero-bcg-2.jpeg'
 
 const Hero = () => {
-  return <h4>hero</h4>
+  return <Wrapper className='section-center'>
+    <article className='content'>
+      <h1> Get Everything under your Comfort Zone </h1>
+      <p>
+        
+      </p>
+    </article>
+    
+  </Wrapper>
 }
 
 const Wrapper = styled.section`
@@ -58,7 +66,7 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
     }
     .img-container::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 10%;
       height: 80%;
@@ -68,6 +76,6 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
     }
   }
-`
+`;
 
 export default Hero
