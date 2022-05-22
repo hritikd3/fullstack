@@ -5,15 +5,19 @@ import heroBcg from '../assets/hero-bcg.jpeg'
 import heroBcg2 from '../assets/hero-bcg-2.jpeg'
 
 const Hero = () => {
-  return <Wrapper className='section-center'>
-    <article className='content'>
-      <h1> Get Everything under your Comfort Zone </h1>
-      <p>
-        
-      </p>
-    </article>
-    
-  </Wrapper>
+  return (
+    <Wrapper className="section-center">
+      <article className="content">
+        <h1> Get Everything under your Comfort Zone </h1>
+        <p>
+          Phasellus non sem pellentesque odio faucibus tempor. Aliquam erat
+          volutpat. Sed ullamcorper turpis ante, vulputate dignissim ex suscipit
+          ut. Vivamus metus lacus, tempor in commodo ac, commodo eget arcu.
+          Nulla molestie tellus molestie ligula facilisis, s
+        </p>
+      </article>
+    </Wrapper>
+  );
 }
 
 const Wrapper = styled.section`
