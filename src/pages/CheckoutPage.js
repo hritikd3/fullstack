@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom'
 const CheckoutPage = () => {
   return (
     <main>
-      <PageHero title='checkout' />
       <Wrapper className='page'>
         <h3> checkout here</h3>
       </Wrapper>

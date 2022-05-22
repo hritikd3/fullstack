@@ -8,14 +8,13 @@ const AboutPage = () => {
     <main>
       <PageHero title="about" />
       <Wrapper className="page section section-center">
-        <img src={aboutImg} alt="about_img" />
         <article>
           <div className="title">
             <h2>our story</h2>
             <div className="underline"></div>
           </div>
           <p>
-            We at Mr.Chairwalla beleive in Self-indulgent and relaxing chaise lounge chairs
+            We at FurnitureLand beleive in Self-indulgent and relaxing chaise lounge chairs
             embody the mantra, treat yourself! You may picture old Hollywood
             glamor or Victorian parlors when you think of chaise lounges. But
             these luxurious long chairs can neatly fit into any decor scheme, be
