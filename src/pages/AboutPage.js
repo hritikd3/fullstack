@@ -6,6 +6,7 @@ import aboutImg from '../assets/hero-bcg.jpeg'
 const AboutPage = () => {
   return (
     <main>
+      {/* important section which is help in header routing */}
       <PageHero title="about" />
       <Wrapper className="page section section-center">
         <article>

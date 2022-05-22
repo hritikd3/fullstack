@@ -17,8 +17,9 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Sidebar />
-      <Switch>
+      <Sidebar /> 
+      {/* we are routing here over our diffferent pages i.e we are making our web app not SPA but multipages */}
+      <Switch> 
         <Route exact path="/">
           <Home />
         </Route>
