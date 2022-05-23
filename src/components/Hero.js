@@ -8,14 +8,24 @@ const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
-        <h1> Get Everything under your Comfort Zone </h1>
+        <h1> Get Everything under your Comfort Zone </h1> <br />
         <p>
           Phasellus non sem pellentesque odio faucibus tempor. Aliquam erat
           volutpat. Sed ullamcorper turpis ante, vulputate dignissim ex suscipit
           ut. Vivamus metus lacus, tempor in commodo ac, commodo eget arcu.
           Nulla molestie tellus molestie ligula facilisis, s
         </p>
+<Link to='/products' className='btn hero-btn' >
+shop now 
+</Link>
+
       </article>
+      <article className="img-container">
+        <img src={heroBcg} alt="table image" className='main-img' />
+        <img src={heroBcg2} alt="team working" className='accent-img' />
+
+      </article>
+
     </Wrapper>
   );
 }
