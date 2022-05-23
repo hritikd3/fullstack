@@ -9,6 +9,7 @@ const AboutPage = () => {
       {/* important section which is help in header routing */}
       <PageHero title="about" />
       <Wrapper className="page section section-center">
+            <img src={aboutImg} alt='about '  />
         <article>
           <div className="title">
             <h2>our story</h2>
