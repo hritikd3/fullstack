@@ -57,8 +57,9 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: auto;
-      height: auto;
+      width: 10rem;
+      object-fit:cover;
+      height: 14rem;
       margin-left: -2px;
       max-height: 144px;
       max-width: 480px;
