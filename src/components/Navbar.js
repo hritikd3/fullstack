@@ -60,8 +60,9 @@ const NavContainer = styled.nav`
       width: 10rem;
       object-fit:cover;
       height: 14rem;
-      margin-left: -2px;
-      max-height: 144px;
+      margin-left: -6px;
+      margin-top:1rem;
+      max-height: 184px;
       max-width: 480px;
     }
   }
