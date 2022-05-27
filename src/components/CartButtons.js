@@ -8,6 +8,7 @@ import { useUserContext } from '../context/user_context'
 
 const CartButton = () => {
   const { closeSidebar } = useProductsContext() 
+  const {total_items}= useCartContext();
    return (
     <Wrapper className='cart-btn-wrapper'>
       {/* functionality for closing the sidebar when the user clicks */}
@@ -17,7 +18,7 @@ const CartButton = () => {
           {/* // font awesome icons */}
           <FaShoppingCart />
           {/* dummy value */}
-          <span className="cart-value">12</span>
+          <span className="cart-value">{total_items}</span>
         </span>
       </Link>
        <button type='button' className='auth-btn' >
