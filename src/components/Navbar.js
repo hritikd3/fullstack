@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components' 
-import logoo from '../assets/logoo.jpg'
+import logoo from '../assets/newlogo.png'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
@@ -14,8 +14,8 @@ const Nav = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-          </Link>
-            <img src={logoo} alt="comfy sloth" />
+            <img src={logoo} alt="logo" />
+          </Link>  
           <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
           </button>
@@ -57,9 +57,11 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: 130px;
-      height: 1.5rem;
+      width: auto;
+      height: auto;
       margin-left: -2px;
+      max-height: 144px;
+      max-width: 480px;
     }
   }
   .nav-toggle {
