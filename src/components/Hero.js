@@ -21,7 +21,7 @@ shop now
 
       </article>
       <article className="img-container">
-        <img src={heroBcg} alt="table image" className='main-img' />
+        <img src={heroBcg} alt="table" className='main-img' />
         <img src={heroBcg2} alt="team working" className='accent-img' />
 
       </article>

@@ -7,15 +7,15 @@ import { links } from '../utils/constants'
 import CartButtons from './CartButtons'
 import { useProductsContext } from '../context/products_context'
 import { useUserContext } from '../context/user_context'
-const Nav = () => {
+const Nav = () => { 
   const { openSidebar } = useProductsContext();
   return (
     <NavContainer>
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
-            <img src={logoo} alt="comfy sloth" />
           </Link>
+            <img src={logoo} alt="comfy sloth" />
           <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
           </button>
@@ -57,8 +57,8 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: 180px;
-      height: 5.5rem;
+      width: 130px;
+      height: 1.5rem;
       margin-left: -2px;
     }
   }
