@@ -52,6 +52,7 @@ const Wrapper = styled.section`
     display: grid;
     gap: 2.5rem;
   }
+
   .service {
     background: var(--clr-primary-7);
     text-align: center;
@@ -61,6 +62,7 @@ const Wrapper = styled.section`
       color: var(--clr-primary-2);
     }
   }
+
   span {
     width: 4rem;
     height: 4rem;
@@ -75,6 +77,7 @@ const Wrapper = styled.section`
       font-size: 2rem;
     }
   }
+
   @media (min-width: 992px) {
     .header {
       display: grid;
