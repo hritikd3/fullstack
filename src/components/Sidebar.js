@@ -1,5 +1,5 @@
 import React from 'react'
-import logoo from '../assets/logoo.jpg'
+import logoo from '../assets/newlogo.png'
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
 import { FaTimes } from 'react-icons/fa'
@@ -8,8 +8,10 @@ import styled from 'styled-components'
 import CartButtons from './CartButtons'
 import { useUserContext } from '../context/user_context'
 
+
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext();
+  const { myUser } = useUserContext();
   return (
     <SidebarContainer>
       <aside
@@ -31,19 +33,20 @@ const Sidebar = () => {
               </li>
             );
           })}
-          
+          {myUser && (
             <li>
               <Link to="/checkout" onClick={closeSidebar}>
                 checkout
               </Link>
             </li>
-          
+          )}
         </ul>
         <CartButtons />
       </aside>
     </SidebarContainer>
   );
 };
+
 const SidebarContainer = styled.div`
   text-align: center;
   .sidebar-header {
@@ -67,7 +70,8 @@ const SidebarContainer = styled.div`
   }
   .logo {
     justify-self: center;
-    height: 85px;
+    height: 9rem;
+    width:9rem;
   }
   .links {
     margin-bottom: 2rem;
