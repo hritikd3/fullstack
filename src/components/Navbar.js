@@ -58,12 +58,12 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     img {
-      width: 10rem;
+      width: 15rem;
       object-fit:cover;
-      height: 14rem;
-      margin-left: -6px;
+      height: 20rem;
+      margin-left: -9px;
       margin-top:1rem;
-      max-height: 184px;
+      max-height: 274px;
       max-width: 480px;
     }
   }
