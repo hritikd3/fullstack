@@ -10,23 +10,21 @@ import { Auth0Provider } from '@auth0/auth0-react'
 // dev-6htm-9pd.us.auth0.com
 // Vk2hhNhKHfuGHlWciIeC1RAUJgObTmnO;
 ReactDOM.render(
-  <UserProvider>
-
   <Auth0Provider
     domain="dev-6htm-9pd.us.auth0.com"
     clientId="Vk2hhNhKHfuGHlWciIeC1RAUJgObTmnO"
     redirectUri={window.location.origin}
     cacheLocation="localstorage"
   >
-    <ProductsProvider>
-      <FilterProvider>
-        <CartProvider>
-          <App />
-        </CartProvider>
-      </FilterProvider>
-    </ProductsProvider>
-  </Auth0Provider>
-
-  </UserProvider>,
+    <UserProvider>
+      <ProductsProvider>
+        <FilterProvider>
+          <CartProvider>
+            <App />
+          </CartProvider>
+        </FilterProvider>
+      </ProductsProvider>
+    </UserProvider>
+  </Auth0Provider>,
   document.getElementById("root")
 );

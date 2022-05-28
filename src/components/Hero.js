@@ -10,22 +10,20 @@ const Hero = () => {
       <article className="content">
         <h1> Get Everything under your Comfort Zone </h1> <br />
         <p>
-          Phasellus non sem pellentesque odio faucibus tempor. Aliquam erat
-          volutpat. Sed ullamcorper turpis ante, vulputate dignissim ex suscipit
-          ut. Vivamus metus lacus, tempor in commodo ac, commodo eget arcu.
-          Nulla molestie tellus molestie ligula facilisis, s
+          We at FurnitureLand beleive in Self-indulgent and relaxing chaise
+          lounge chairs embody the mantra, treat yourself! You may picture old
+          Hollywood glamor or Victorian parlors when you think of chaise
+          lounges. But these luxurious long chairs can neatly fit into any decor
+          scheme, be it mid-mod or farmhouse chic.
         </p>
-<Link to='/products' className='btn hero-btn' >
-shop now 
-</Link>
-
+        <Link to="/products" className="btn hero-btn">
+          shop now
+        </Link>
       </article>
       <article className="img-container">
-        <img src={heroBcg} alt="table" className='main-img' />
-        <img src={heroBcg2} alt="team working" className='accent-img' />
-
+        <img src={heroBcg} alt="table" className="main-img" />
+        <img src={heroBcg2} alt="team working" className="accent-img" />
       </article>
-
     </Wrapper>
   );
 }
