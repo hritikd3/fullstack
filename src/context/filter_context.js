@@ -11,7 +11,6 @@ import {
   CLEAR_FILTERS,
 } from "../actions";
 import { useProductsContext } from "./products_context";
-import { Products } from "../pages";
 
 const initialState = {
   filtered_products: [],
